@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de textos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="d-flex gap-1 justify-content-center align-items-center mb-2">
+            <img id="logoEscriba" src="./image/pergaminhoEscriba.png"
+                alt="Imagem de um pergaminho com uma pena e um pote de tinta ao seu lado." class="img-fluid">
+            <h1>O Escriba</h1>
+        </div>
+        <div class="quote-container mx-2">
+            <p class="quote-text text-center">"Se a comunicação com os Espíritos nos proporciona esclarecimentos, se nos
+                revela o
+                que está oculto, se nos guia e nos consola, é porque Deus permitiu que assim fosse para nosso
+                progresso."
+            </p>
+            <p class="quote-author text-end fw-bold">Allan Kardek</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--secondary-color); height:3rem;">
+        <!--<div class="container">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>-->
+    </nav>
+
+    <section class="search-section">
+        <input type="text" class="search-box" data-bs-toggle="tooltip"
+            data-bs-title="Para pesquisar por data, use: dd/mm/aaaa, mm/aaaa ou aaaa." data-bs-placement="top"
+            id="search-input" placeholder="Busque por título, autor ou data ...">
+        <div class="filter-tags"></div>
+    </section>
+
+    <main class="poetry-grid"></main>
+
+    <button class="btn btn-light back-to-top" onclick="scrollToTop()" title="Voltar ao tôpo">
+        <i class="bi bi-house-fill"></i>
+    </button>
+
+    <footer>
+        <p>© 2025 O Escriba. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/public16Victor.js"></script>
+    <script src="./js/backToHome.js"></script>
+    <script src="./js/aula30.js"></script>
+</body>
+
+</html>

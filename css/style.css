@@ -1,0 +1,353 @@
+        :root {
+            --primary-color: #8B7355;
+            --secondary-color: #DEB887;
+            --background-color: #F5F5DC;
+            --text-color: #4A4A4A;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 2rem;
+            /*text-align: center;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contêiner para os parágrafos da citação */
+        .quote-container {
+            max-width: 800px;
+            /* Limita a largura máxima do texto para consistência */
+            margin-left: auto;
+            /* Centraliza o contêiner junto com margin-right */
+            margin-right: auto;
+        }
+
+        /* Estilo do texto da citação */
+        .quote-text {
+            margin: 0;
+            /* Remove margens padrão do Bootstrap para controle total */
+        }
+
+        /* Estilo do autor */
+        .quote-author {
+            margin: 0;
+            /* Remove margens padrão */
+        }
+
+        /*-----------------------------------------------------------------------*/
+
+        #logoEscriba {
+            width: 5rem;
+            height: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+            /* Sombra leve */
+        }
+
+        @media (max-width: 576px) {
+            #logoEscriba {
+                width: 3rem;
+                /* Reduz a logo em telas pequenas */
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        nav a {
+            color: var(--text-color) !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff !important;
+        }
+
+        .search-section {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .search-box {
+            width: 80%;
+            padding: 0.8rem;
+            margin: 1rem 0;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        /*----------------------------------------------------------------*/
+        /*Ajuste do tamanho da fonte do placeholder*/
+        .search-box::placeholder {
+            font-size: 16px;
+            color: #999;
+        }
+
+        .search-box::-webkit-input-placeholder {
+            /* Chrome, Safari */
+            font-size: 16px;
+            color: #999;
+        }
+
+        .search-box:-moz-placeholder {
+            /* Firefox 18- */
+            font-size: 16px;
+            color: #999;
+        }
+
+        .search-box::-moz-placeholder {
+            /* Firefox 19+ */
+            font-size: 16px;
+            color: #999;
+        }
+
+        .search-box:-ms-input-placeholder {
+            /* IE 10+ */
+            font-size: 16px;
+            color: #999;
+        }
+
+        @media (max-width: 576px) {
+            .search-box::placeholder {
+                font-size: 12px;
+            }
+
+            .search-box::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+
+            .search-box:-moz-placeholder {
+                font-size: 12px;
+            }
+
+            .search-box::-moz-placeholder {
+                font-size: 12px;
+            }
+
+            .search-box:-ms-input-placeholder {
+                font-size: 12px;
+            }
+        }
+
+        /*--------------------------------------------------*/
+        /*Ajustando a cor de fundo do tooltip*/
+
+        .tooltip-inner {
+            background-color: var(--primary-color);
+            /* Cor de fundo desejada (ex.: cinza escuro) */
+            color: #fff;
+            /* Cor do texto para contraste */
+        }
+
+        /* Opcional: ajusta a cor da seta do tooltip */
+        .tooltip-arrow::before {
+            border-top-color: var(--primary-color) !important;
+            /* Ajusta a seta para combinar com o fundo */
+        }
+
+        /*--------------------------------------------------------------*/
+
+        .filter-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tag:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .poetry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .poetry-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .poetry-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .poetry-title {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .poetry-preview {
+            white-space: pre-line;
+            /* Adicionado pra suportar quebras de linha */
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .poetry-author {
+            color: var(--secondary-color);
+            font-style: italic;
+            /*margin-bottom: 1rem;*/
+            text-align: right;
+            /* Alinha à direita */
+        }
+
+        .poetry-author p {
+            margin: 3px 0;
+            /* Espaçamento entre linhas */
+        }
+
+
+        .speak-btn {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .speak-btn:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        /*--------------------------------------------------------------*/
+        .about-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-btn {
+            background-color: #f5e6cc;
+            color: #4a2c00;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .about-btn:hover {
+            background-color: #e0d1a6;
+        }
+
+        .about-card {
+            position: absolute;
+            bottom: 100%;
+            /* Aparece acima do botão */
+            left: 0;
+            background-color: #f5e6cc;
+            color: #4a2c00;
+            border: 1px solid #4a2c00;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .medium-photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .medium-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #4a2c00;
+        }
+
+        .medium-info {
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        .medium-contact p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .medium-contact a {
+            color: #4a2c00;
+            text-decoration: underline;
+        }
+
+        .medium-contact a:hover {
+            color: #e0d1a6;
+        }
+
+        /*---------------------------------------------------------------*/
+
+        /*Botão back to home*/
+        .back-to-top {
+            position: fixed;
+            opacity: 0.3;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 999;
+        }
+
+        .back-to-top i {
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .back-to-top:hover {
+            opacity: 1;
+        }
+
+        /*----------------------------------------------------------------*/
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
