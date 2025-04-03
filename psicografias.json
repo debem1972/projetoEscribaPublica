@@ -7,8 +7,8 @@
     "about": "Sem informações sobre o médium.",
     "mediumPhoto": "",
     "mediumPhone": "(51) 99204-1896",
-    "mediumEmail": "danielopes625@gmail.com",
-    "timestamp": "2025-04-03T11:17:18.797Z",
+    "mediumEmail": "debem1972@gmail.com",
+    "timestamp": "2025-04-03T20:36:01.640Z",
     "id": 3
   },
   {
@@ -17,10 +17,10 @@
     "category": "pergunta",
     "author": "Superior / Allan Kardek",
     "about": "Sem informações sobre o médium.",
-    "mediumPhoto": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLZ1Kp8qV7TK9p0v2muiclfjD_4AN0fQPIGAHRm6R-8yF3iRVUxz4m68L2kYcAt6Pq8o9L8tND6HJ4eJ_GMePHAbQ3m0O7ttYJgZQ3EmSmAD7xbzuSwOrBYFnme2udZml-Nv32llsI73V1SB5dIwNDD2NliQRsJUIZV-0d8ort2LJS5usYVDow7IJqOQ/s600/Allan_Kardec-verdadeira_biografia.jpg",
+    "mediumPhoto": "",
     "mediumPhone": "",
     "mediumEmail": "",
-    "timestamp": "2025-04-02T20:10:05.764Z",
+    "timestamp": "2025-04-03T20:36:36.863Z",
     "id": 4
   },
   {
@@ -31,18 +31,6 @@
     "about": "Daniel lopes Bemfica, 53 anos, grato por estar casado com uma esposa fantástica, pai de 4 filhos maravilhosos, e estudante da doutrina espírita.",
     "timestamp": "2025-04-02T12:00:37.772Z",
     "id": 5
-  },
-  {
-    "title": "O teste",
-    "content": "Este é um teste do novo formato de informações sobre o médium.",
-    "category": "teste1",
-    "author": "Daniel",
-    "about": "Sou o Daniel, tenho 53 anos, sou casado, tenho 3 filhos e sou estudante da doutrina espírita à um ano.",
-    "mediumPhoto": "https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg",
-    "mediumPhone": "(51)992041896",
-    "mediumEmail": "debem1972@gmail.com",
-    "timestamp": "2025-04-02T20:10:39.689Z",
-    "id": 8
   },
   {
     "title": "O teste",
@@ -62,10 +50,10 @@
     "category": "amor",
     "author": "Daniel",
     "about": "Sou Daniel, tenho 53 anos, casado e pai de 4 filhos maravilhosos.",
-    "mediumPhoto": "https://drive.google.com/thumbnail?id=0B2tJaKYE2sE1T0w5VC1RNGdrckE",
+    "mediumPhoto": "",
     "mediumPhone": "",
     "mediumEmail": "",
-    "timestamp": "2025-04-03T13:05:45.664Z",
+    "timestamp": "2025-04-03T20:38:17.751Z",
     "id": 11
   }
 ]
