@@ -1,4 +1,5 @@
-![Logo do Escriba](./image/pergaminhoEscriba.png)
+<!--![Logo do Escriba](./image/pergaminhoEscriba.png)-->
+<img src="./image/pergaminhoEscriba.png" alt="Logo do Escriba" width="200">
 
 # Projeto Escriba Pública
 
